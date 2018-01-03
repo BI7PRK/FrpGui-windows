@@ -19,8 +19,8 @@ namespace FrpGui.propertyentity
             set;
         }
         [DisplayName("远程端口"), Description("在本地定义远程监听端口"), Category("代理")]
-        [PropertyKey("plugin_http_use")]
-        public string PluginUse
+        [PropertyKey("plugin_http_user")]
+        public string PluginUser
         {
             get;
             set;
