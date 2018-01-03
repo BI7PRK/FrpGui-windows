@@ -290,8 +290,11 @@ namespace FrpGui_windows
                 process.Exited += (s, _e) =>
                 {
                     output("Exited with " + process.ExitCode);
-                    runfrpc.Enabled = true && exe == "frpc.exe";
-                    runfrps.Enabled = true && exe == "frps.exe";
+                    if(exe == "frpc.exe")
+                        runfrpc.Enabled = true;
+
+                    if (exe == "frps.exe")
+                        runfrps.Enabled = true;
                 };
                 process.EnableRaisingEvents = true;
                 process.BeginOutputReadLine();
