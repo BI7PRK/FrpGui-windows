@@ -36,7 +36,7 @@ namespace FrpGui.propertyentity
             set;
         }
 
-        [DisplayName("绑定地址"), Description("点对点的服务绑定地址"), Category("P2P")]
+        [DisplayName("绑定地址"), Description("点对点通讯服务。发起请求端的绑定地址"), Category("P2P")]
         [PropertyKey("bind_addr")]
         public string BindAddress
         {
@@ -44,7 +44,7 @@ namespace FrpGui.propertyentity
             set;
         }
 
-        [DisplayName("绑定端口"), Description("点对点的服务绑定端口"), Category("P2P")]
+        [DisplayName("绑定端口"), Description("点对点通讯服务。发起请求端的绑定端口"), Category("P2P")]
         [PropertyKey("bind_port")]
         public int BindPort
         {

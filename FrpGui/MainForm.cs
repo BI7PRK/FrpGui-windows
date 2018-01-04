@@ -302,10 +302,10 @@ namespace FrpGui_windows
                 {
                     output("Exited with " + process.ExitCode);
                     if (exe.EndsWith("frpc.exe"))
-                        this.Invoke(new Action(() => runfrpc.Enabled = true));
+                        this.Invoke(new Action(() => runfrpc.Enabled = process.ExitCode != 0));
 
                     if (exe.EndsWith("frps.exe"))
-                        this.Invoke(new Action(() => runfrps.Enabled = true));
+                        this.Invoke(new Action(() => runfrps.Enabled = process.ExitCode != 0));
                 };
                 process.EnableRaisingEvents = true;
                 process.BeginOutputReadLine();

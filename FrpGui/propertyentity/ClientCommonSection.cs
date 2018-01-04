@@ -59,7 +59,7 @@ namespace FrpGui.propertyentity
             set;
         }
 
-        [DisplayName("地址"), Description("此处通常是服务器的域名或者IP"), Category("仪表盘")]
+        [DisplayName("地址"), Description("从WebAPI获取配置，用于配置热加载。通常是本地（127.0.0.1）"), Category("热加载")]
         [PropertyKey("admin_addr")]
         public string DashboardAddress
         {
@@ -67,7 +67,16 @@ namespace FrpGui.propertyentity
             set;
         }
 
-        [DisplayName("端口"), Description("登陆仪表盘的端口"), Category("仪表盘")]
+
+        [DisplayName("用户名"), Description("登陆仪表盘的用户"), Category("热加载")]
+        [PropertyKey("admin_user")]
+        public string DashboardUser
+        {
+            get;
+            set;
+        }
+
+        [DisplayName("端口"), Description("登陆仪表盘的端口"), Category("热加载")]
         [PropertyKey("admin_port")]
         public int DashboardPort
         {
@@ -76,15 +85,8 @@ namespace FrpGui.propertyentity
         }
 
 
-        [DisplayName("用户名"), Description("登陆仪表盘的用户"), Category("仪表盘")]
-        [PropertyKey("admin_user")]
-        public string DashboardUser
-        {
-            get;
-            set;
-        }
 
-        [DisplayName("密码"), Description("登陆仪表盘的密码"), Category("仪表盘")]
+        [DisplayName("密码"), Description("登陆仪表盘的密码"), Category("热加载")]
         [PropertyKey("admin_pwd")]
         public string DashboardPwd
         {
@@ -107,7 +109,7 @@ namespace FrpGui.propertyentity
             set;
         }
 
-        [DisplayName("代理名称"), Description("your proxy name will be changed to {user}.{proxy}")]
+        [DisplayName("客户端名称"), Description("your proxy name will be changed to {user}.{proxy}")]
         public string User
         {
             get;

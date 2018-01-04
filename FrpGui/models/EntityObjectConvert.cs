@@ -24,11 +24,11 @@ namespace FrpGui.models
         public static IProepertyEntity ToEntity(this SectionData data)
         {
             var name = data.Keys["type"].ToUpperFirst();
-            if (!string.IsNullOrEmpty(data.Keys["bind_addr"]))
+            if (!string.IsNullOrEmpty(data.Keys["kcp_bind_port"]))
             {
                 name = "ServerCommon";
             }
-            if (!string.IsNullOrEmpty(data.Keys["server_addr"]))
+            if (!string.IsNullOrEmpty(data.Keys["heartbeat_interval"]))
             {
                 name = "ClientCommon";
             }
