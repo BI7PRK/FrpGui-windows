@@ -12,20 +12,20 @@ namespace FrpGui.propertyentity
     {
         public new ConnectTypes Type => ConnectTypes.Tcp;
 
-        [DisplayName("远程端口"), Description("在本地定义远程监听端口"), Category("代理")]
+        [DisplayName("代理类型"), Description("定义代理类型"), Category("代理")]
         public Plugins Plugin
         {
             get;
             set;
         }
-        [DisplayName("远程端口"), Description("在本地定义远程监听端口"), Category("代理")]
+        [DisplayName("用户名"), Description("代理登陆用户名"), Category("代理")]
         [PropertyKey("plugin_http_user")]
         public string PluginUser
         {
             get;
             set;
         }
-        [DisplayName("远程端口"), Description("在本地定义远程监听端口"), Category("代理")]
+        [DisplayName("密码"), Description("代理登陆密码"), Category("代理")]
         [PropertyKey("plugin_http_passwd")]
         public string PluginPassword
         {

@@ -55,7 +55,6 @@ namespace FrpGui.models
 
                 if (item.PropertyType.IsEnum)
                 {
-
                     var changeValue = Enum.Parse(item.PropertyType, value.ToUpperFirst());
                     item.SetValue(obj, changeValue);
                 }
@@ -71,12 +70,12 @@ namespace FrpGui.models
         }
 
 
-        public static IniData ToIniData(this IProepertyEntity obj)
+        public static SectionData ToSectionData(this IProepertyEntity obj)
         {
             var sectionName = obj.GetSectionName();
             if (string.IsNullOrEmpty(sectionName))
             {
-                return new IniData();
+                return null;
             }
             var sectionData = new SectionData(sectionName);
             var type = obj.GetType();
@@ -96,18 +95,33 @@ namespace FrpGui.models
                 }
                 var value = item.GetValue(obj, null);
 
+               
                 if (value == null
                    || string.IsNullOrWhiteSpace(value.ToString()))
                     continue;
 
-                if (item.PropertyType.Name == typeof(int).Name && (int)value == 0)
+                if (item.PropertyType.Name == typeof(int).Name
+                    && value.Equals(0))
                 {
                     continue;
                 }
+
+                if (item.PropertyType.IsEnum && value.ToString().Equals("None"))
+                {
+                    continue;
+                }
+
                 sectionData.Keys.AddKey(key, value.ToString().ToLower());
             }
+            return sectionData;
+        }
+
+        public static IniData ToIniData(this IProepertyEntity obj)
+        {
             var result = new IniData();
-            result.Sections.Add(sectionData);
+            var data = obj.ToSectionData();
+            if (data != null)
+                result.Sections.Add(data);
             return result;
         }
     }

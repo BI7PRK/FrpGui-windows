@@ -48,12 +48,12 @@
             this.runfrpc = new System.Windows.Forms.Button();
             this.loadfrpc = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.stopBtm = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.unstalBtm = new System.Windows.Forms.Button();
             this.instalBtm = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -92,9 +92,9 @@
             // propertyGrid1
             // 
             this.propertyGrid1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.propertyGrid1.Location = new System.Drawing.Point(166, 3);
+            this.propertyGrid1.Location = new System.Drawing.Point(154, 3);
             this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(193, 325);
+            this.propertyGrid1.Size = new System.Drawing.Size(205, 325);
             this.propertyGrid1.TabIndex = 1;
             this.propertyGrid1.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.propertyGrid1_PropertyValueChanged);
             // 
@@ -107,7 +107,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(157, 325);
+            this.groupBox1.Size = new System.Drawing.Size(145, 325);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "配置项";
@@ -116,7 +116,7 @@
             // 
             this.del.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.del.Enabled = false;
-            this.del.Location = new System.Drawing.Point(113, 297);
+            this.del.Location = new System.Drawing.Point(103, 297);
             this.del.Name = "del";
             this.del.Size = new System.Drawing.Size(39, 23);
             this.del.TabIndex = 3;
@@ -127,7 +127,7 @@
             // add
             // 
             this.add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.add.Location = new System.Drawing.Point(68, 297);
+            this.add.Location = new System.Drawing.Point(58, 297);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(39, 23);
             this.add.TabIndex = 2;
@@ -142,7 +142,7 @@
             this.itemType.FormattingEnabled = true;
             this.itemType.Location = new System.Drawing.Point(6, 299);
             this.itemType.Name = "itemType";
-            this.itemType.Size = new System.Drawing.Size(56, 20);
+            this.itemType.Size = new System.Drawing.Size(46, 20);
             this.itemType.TabIndex = 1;
             // 
             // configItems
@@ -151,7 +151,7 @@
             this.configItems.HideSelection = false;
             this.configItems.Location = new System.Drawing.Point(3, 17);
             this.configItems.Name = "configItems";
-            this.configItems.Size = new System.Drawing.Size(151, 274);
+            this.configItems.Size = new System.Drawing.Size(139, 274);
             this.configItems.TabIndex = 0;
             this.configItems.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.configItems_AfterSelect);
             // 
@@ -288,14 +288,6 @@
             this.tabPage4.Text = "服务";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(8, 50);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(346, 273);
-            this.textBox1.TabIndex = 0;
-            // 
             // stopBtm
             // 
             this.stopBtm.Location = new System.Drawing.Point(139, 9);
@@ -343,6 +335,14 @@
             this.instalBtm.Text = "安装";
             this.instalBtm.UseVisualStyleBackColor = true;
             this.instalBtm.Click += new System.EventHandler(this.instalBtm_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(8, 50);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(346, 273);
+            this.textBox1.TabIndex = 0;
             // 
             // MainForm
             // 

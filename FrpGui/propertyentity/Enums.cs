@@ -37,12 +37,14 @@ namespace FrpGui.propertyentity
 
     public enum Plugins
     {
+        None,
         Http_proxy,
         Socket5
     }
 
     public enum Roles
     {
+        None,
         Visitor,
         Server
     }

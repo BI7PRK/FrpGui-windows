@@ -136,8 +136,11 @@ namespace FrpGui_windows
             {
                 clientConfigData.Sections.RemoveSection(CurrentSectionName);
             }
-            var data = obj.ToIniData();
-            clientConfigData.Merge(data);
+
+            var data = obj.ToSectionData();
+            clientConfigData.Sections.RemoveSection(obj.SectionName);
+            clientConfigData.Sections.Add(data);
+
             parser.WriteFile(configFile_client, clientConfigData, Encoding.Default);
 
             configItems.SelectedNode.Text = obj.SectionName;
