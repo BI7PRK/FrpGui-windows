@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrpGui", "FrpGui\FrpGui.csproj", "{A8A358D7-9724-4FDD-9DD6-4270923DFD89}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrpService", "FrpService\FrpService.csproj", "{9CB42064-99E0-419C-A442-DA79C16F2BFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +15,11 @@ Global
 		{A8A358D7-9724-4FDD-9DD6-4270923DFD89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8A358D7-9724-4FDD-9DD6-4270923DFD89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8A358D7-9724-4FDD-9DD6-4270923DFD89}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9CB42064-99E0-419C-A442-DA79C16F2BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9CB42064-99E0-419C-A442-DA79C16F2BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9CB42064-99E0-419C-A442-DA79C16F2BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9CB42064-99E0-419C-A442-DA79C16F2BFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58374165-E164-449A-A2B6-29050D64DFC4}
 	EndGlobalSection
 EndGlobal
