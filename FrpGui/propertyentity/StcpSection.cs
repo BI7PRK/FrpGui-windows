@@ -28,7 +28,7 @@ namespace FrpGui.propertyentity
 
 
 
-        [DisplayName("服务名称"), Description("点对点的服务名称"), Category("P2P")]
+        [DisplayName("服务名称"), Description("对端的服务名称。即配置项的名称。例如 [p2p_ssh]"), Category("P2P")]
         [PropertyKey("server_name")]
         public string ServerName
         {

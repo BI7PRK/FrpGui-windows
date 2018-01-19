@@ -261,7 +261,7 @@ namespace FrpGui_windows
 
         private void loadfrpc_Click(object sender, EventArgs e)
         {
-            Run("frpc.exe", "-c ./frpc.ini --reload");
+            Run("frpc.exe", "-c ./frpc.ini reload");
         }
 
 
@@ -274,7 +274,7 @@ namespace FrpGui_windows
 
         private void loadfrps_Click(object sender, EventArgs e)
         {
-            Run("frps.exe", "-c ./frps.ini --reload");
+            //Run("frps.exe", "-c ./frps.ini --reload");
         }
 
 

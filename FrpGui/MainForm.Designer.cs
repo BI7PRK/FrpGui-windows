@@ -120,6 +120,7 @@
             this.loadfrps.TabIndex = 1;
             this.loadfrps.Text = "重载";
             this.loadfrps.UseVisualStyleBackColor = true;
+            this.loadfrps.Visible = false;
             this.loadfrps.Click += new System.EventHandler(this.loadfrps_Click);
             // 
             // groupBox2
@@ -272,7 +273,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frp配置";
+            this.Text = "frp配置 for v0.15.0";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
