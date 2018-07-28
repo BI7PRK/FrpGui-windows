@@ -16,7 +16,8 @@ namespace FrpGui.propertyentity
         Tcp,
         Udp,
         Stcp,
-        Xtcp
+        Xtcp,
+        Dns
     }
 
     public enum LogLevels

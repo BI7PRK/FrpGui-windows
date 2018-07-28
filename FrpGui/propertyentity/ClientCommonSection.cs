@@ -1,10 +1,5 @@
 ﻿using FrpGui.models;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FrpGui.propertyentity
 {
@@ -27,7 +22,7 @@ namespace FrpGui.propertyentity
         {
             get;
             set;
-        }
+        } = 7000;
         
 
         [DisplayName("预连接数"), Description(""), Category("基本")]
@@ -37,19 +32,7 @@ namespace FrpGui.propertyentity
             get;
             set;
         }
-
-
-
-        //[DisplayName("Https端口"), Description("设置Https监听端口，以提供SSL转发服务"), Category("Web服务")]
-        //[PropertyKey("vhost_https_port")]
-        //public int HttpsPort
-        //{
-        //    get;
-        //    set;
-        //}
-
-
-
+        
 
         [DisplayName("心跳间隔"), Description("设置一个值间隔请求保证在线"), Category("基本")]
         [PropertyKey("heartbeat_interval")]

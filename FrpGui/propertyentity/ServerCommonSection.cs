@@ -1,10 +1,5 @@
 ﻿using FrpGui.models;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FrpGui.propertyentity
 {
@@ -27,7 +22,7 @@ namespace FrpGui.propertyentity
         {
             get;
             set;
-        }
+        } = 7000;
 
 
         [DisplayName("UDP端口"), Description("UDP服务监听端口，通常用于点对点穿透"), Category("基本")]
@@ -36,9 +31,9 @@ namespace FrpGui.propertyentity
         {
             get;
             set;
-        }
+        } = 7001;
 
-        [DisplayName("Kcp端口"), 
+        [DisplayName("Kcp端口"),
             Description("设置Kcp通讯协议时用到的端口。可以和【绑定端口】相同。"),
             Category("基本")]
         [PropertyKey("kcp_bind_port")]
@@ -46,7 +41,7 @@ namespace FrpGui.propertyentity
         {
             get;
             set;
-        }
+        } = 7000;
 
       
 
@@ -93,7 +88,7 @@ namespace FrpGui.propertyentity
         {
             get;
             set;
-        }
+        } = 80;
 
         [DisplayName("Https端口"), Description("设置Https监听端口，以提供SSL转发服务"), Category("Web服务")]
         [PropertyKey("vhost_https_port")]
@@ -101,7 +96,7 @@ namespace FrpGui.propertyentity
         {
             get;
             set;
-        }
+        } = 443;
 
         [DisplayName("地址"), Description("此处通常是服务器的域名或者IP"), Category("仪表盘")]
         [PropertyKey("dashboard_addr")]
@@ -117,7 +112,7 @@ namespace FrpGui.propertyentity
         {
             get;
             set;
-        }
+        } = 7500;
 
 
         [DisplayName("用户名"), Description("登陆仪表盘的用户"), Category("仪表盘")]

@@ -28,7 +28,7 @@ namespace FrpGui.propertyentity
 
 
 
-        [DisplayName("服务名称"), Description("对端的服务名称。即配置项的名称。例如 [p2p_ssh]"), Category("P2P")]
+        [DisplayName("服务名称"), Description("对端的服务名称。即{user}.配置项的名称。例如 pi3.ssh"), Category("Visitor")]
         [PropertyKey("server_name")]
         public string ServerName
         {
@@ -36,15 +36,18 @@ namespace FrpGui.propertyentity
             set;
         }
 
-        [DisplayName("绑定地址"), Description("点对点通讯服务。发起请求端的绑定地址"), Category("P2P")]
+
+        private string _BindAddress = "127.0.0.1";
+
+        [DisplayName("绑定地址"), Description("点对点通讯服务。客户端需要监听的地址。通常就是（127.0.0.1）"), Category("Visitor")]
         [PropertyKey("bind_addr")]
         public string BindAddress
         {
-            get;
-            set;
+            get => _BindAddress;
+            set => _BindAddress = value;
         }
 
-        [DisplayName("绑定端口"), Description("点对点通讯服务。发起请求端的绑定端口"), Category("P2P")]
+        [DisplayName("绑定端口"), Description("点对点通讯服务。客户端需要监听的端口"), Category("Visitor")]
         [PropertyKey("bind_port")]
         public int BindPort
         {

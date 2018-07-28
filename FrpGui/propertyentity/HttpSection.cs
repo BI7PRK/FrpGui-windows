@@ -61,5 +61,14 @@ namespace FrpGui.propertyentity
             get;
             set;
         }
+
+        //[DisplayName("请求头部参数"), Description("可自定义Http请求头部的参数")]
+        //[PropertyKey("host_header_rewrite")]
+
+        //public Dictionary<string, string> RequestHeaders
+        //{
+        //    get;
+        //    set;
+        //}
     }
 }
