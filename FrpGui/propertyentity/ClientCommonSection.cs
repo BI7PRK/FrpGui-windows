@@ -51,15 +51,7 @@ namespace FrpGui.propertyentity
         }
 
 
-        [DisplayName("用户名"), Description("登陆仪表盘的用户"), Category("热加载")]
-        [PropertyKey("admin_user")]
-        public string DashboardUser
-        {
-            get;
-            set;
-        }
-
-        [DisplayName("端口"), Description("登陆仪表盘的端口"), Category("热加载")]
+        [DisplayName("端口"), Description("指定热加载服务端口"), Category("热加载")]
         [PropertyKey("admin_port")]
         public int DashboardPort
         {
@@ -68,8 +60,17 @@ namespace FrpGui.propertyentity
         }
 
 
+        [DisplayName("用户名"), Description("验证热加载的用户名"), Category("热加载")]
+        [PropertyKey("admin_user")]
+        public string DashboardUser
+        {
+            get;
+            set;
+        }
 
-        [DisplayName("密码"), Description("登陆仪表盘的密码"), Category("热加载")]
+
+
+        [DisplayName("密码"), Description("验证热加载的密码"), Category("热加载")]
         [PropertyKey("admin_pwd")]
         public string DashboardPwd
         {
