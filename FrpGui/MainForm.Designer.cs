@@ -273,7 +273,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frp配置 for v0.15.0";
+            this.Text = "frp配置 for v0.26";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();

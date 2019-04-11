@@ -69,6 +69,7 @@
     <Compile Include="propertyentity\CommonBase.cs" />
     <Compile Include="propertyentity\Enums.cs" />
     <Compile Include="propertyentity\DnsSection.cs" />
+    <Compile Include="propertyentity\PropertyGridFileSelector.cs" />
     <Compile Include="propertyentity\XtcpSection.cs" />
     <Compile Include="propertyentity\HttpsSection.cs" />
     <Compile Include="propertyentity\HttpSection.cs" />
