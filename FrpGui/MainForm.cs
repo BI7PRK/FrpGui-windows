@@ -72,7 +72,6 @@ namespace FrpGui_windows
 
             if (clientConfigData.Sections.Count == 0)
             {
-                ;
                 clientConfigData = obj.ToIniData();
                 configItems.SelectedNode = AddTreeNode(obj);
             }
